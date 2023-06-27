@@ -35,7 +35,7 @@ namespace Day5Assignment
                         powerOftwo.Checkpower();
                         break;                   
                     case 4:
-                        Harmonic harmonicNumber = new Harmonic();
+                        HarmonicNumber harmonicNumber = new HarmonicNumber();
                         harmonicNumber.Checkharmonic();
                         break;
                     case 5:
