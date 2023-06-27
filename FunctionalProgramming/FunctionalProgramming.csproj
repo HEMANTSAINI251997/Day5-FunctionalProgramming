@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alphabet.cs" />
     <Compile Include="Division.cs" />
     <Compile Include="EvenOdd.cs" />
     <Compile Include="Factor.cs" />

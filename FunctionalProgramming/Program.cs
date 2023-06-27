@@ -21,7 +21,8 @@ namespace Day5Assignment
                 Console.WriteLine("\n" + "6. To Compute Quotient and Remainder" + "\n");
                 Console.WriteLine("\n" + "7. For Swaping Two NUmber" + "\n");
                 Console.WriteLine("\n" + "8. To Check Whether a Number is Even or Odd" + "\n");
-                Console.WriteLine("\n" + "9. FOR EXIT" + "\n");
+                Console.WriteLine("\n" + "9. To Check Whether an Alphabet is Vowel or Consonant" + "\n");
+                Console.WriteLine("\n" + "10. FOR EXIT" + "\n");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -59,6 +60,10 @@ namespace Day5Assignment
                         evenodd.Checkevenodd();
                         break;
                     case 9:
+                        Alphabet alphabet = new Alphabet();
+                        alphabet.CheckVowelConsonant();
+                        break;
+                    case 10:
                         flag = false;
                         break;
                     default:
