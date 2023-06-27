@@ -17,7 +17,8 @@ namespace Day5Assignment
                 Console.WriteLine("\n" + "2. Check Leap Year" + "\n");
                 Console.WriteLine("\n" + "3. Power of 2" + "\n");
                 Console.WriteLine("\n" + "4. Harmonic Number" + "\n");
-                Console.WriteLine("\n" + "5. FOR EXIT" + "\n");
+                Console.WriteLine("\n" + "5. Factors" + "\n");
+                Console.WriteLine("\n" + "6. FOR EXIT" + "\n");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -39,6 +40,10 @@ namespace Day5Assignment
                         harmonicNumber.Checkharmonic();
                         break;
                     case 5:
+                        Factor factor = new Factor();
+                        factor.Checkfactor();
+                        break;
+                    case 6:
                         flag = false;
                         break;
                     default:
