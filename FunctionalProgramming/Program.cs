@@ -14,7 +14,8 @@ namespace Day5Assignment
             while (flag)
             {
                 Console.WriteLine("\n" + "1.Flip Coin and print percentage of Heads and Tails" + "\n");
-                Console.WriteLine("\n" + "2. FOR EXIT" + "\n");
+                Console.WriteLine("\n" + "2. Check Leap Year" + "\n");
+                Console.WriteLine("\n" + "3. FOR EXIT" + "\n");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -24,6 +25,11 @@ namespace Day5Assignment
                         flipCoin.Checkflipcoin();
                         break;
                     case 2:
+                        LeapYear leapYear = new LeapYear();
+                        leapYear.Checkleapyear();
+                        break;
+
+                    case 3:
                         flag = false;
                         break;
                     default:
