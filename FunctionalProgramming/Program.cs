@@ -19,7 +19,8 @@ namespace Day5Assignment
                 Console.WriteLine("\n" + "4. Harmonic Number" + "\n");
                 Console.WriteLine("\n" + "5. Factors" + "\n");
                 Console.WriteLine("\n" + "6. To Compute Quotient and Remainder" + "\n");
-                Console.WriteLine("\n" + "7. FOR EXIT" + "\n");
+                Console.WriteLine("\n" + "7. For Swaping Two NUmber" + "\n");
+                Console.WriteLine("\n" + "8. FOR EXIT" + "\n");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -49,6 +50,10 @@ namespace Day5Assignment
                         division.Checkcompute();
                         break;
                     case 7:
+                        Swap swap = new Swap();
+                        swap.Checkswap();
+                        break;
+                    case 8:
                         flag = false;
                         break;
                     default:
