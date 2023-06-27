@@ -15,7 +15,8 @@ namespace Day5Assignment
             {
                 Console.WriteLine("\n" + "1.Flip Coin and print percentage of Heads and Tails" + "\n");
                 Console.WriteLine("\n" + "2. Check Leap Year" + "\n");
-                Console.WriteLine("\n" + "3. FOR EXIT" + "\n");
+                Console.WriteLine("\n" + "3. Power of 2" + "\n");
+                Console.WriteLine("\n" + "4. FOR EXIT" + "\n");
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -28,8 +29,11 @@ namespace Day5Assignment
                         LeapYear leapYear = new LeapYear();
                         leapYear.Checkleapyear();
                         break;
-
                     case 3:
+                        PowerOfTwo powerOftwo = new PowerOfTwo();
+                        powerOftwo.Checkpower();
+                        break;
+                    case 4:
                         flag = false;
                         break;
                     default:
